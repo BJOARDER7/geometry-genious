@@ -13,7 +13,10 @@ document.getElementById('triangle-calc-btn').addEventListener('click', function(
   const triangle = getAreaName('triangle');
   
   // triangle calculation
-  const triangleArea = 0.5 * triangleBase * triangleHeight;
+  const triangleAreaValue = 0.5 * triangleBase * triangleHeight;
+  const triangleArea = triangleAreaValue.toFixed(2);
+
+  
   // validation & create output area
   const areaValue = validationOutput(triangleBase, triangleHeight,triangle, triangleArea);
    
@@ -26,7 +29,8 @@ document.getElementById('rectagle-calc-btn').addEventListener('click', function(
   const rectabgleLength = getInputTagValue('rectangle-length');
   const rectangle = getAreaName('rectangle');
   // rectangle calculation
-  const rectangleArea = rectangleWidth * rectabgleLength;
+  const rectangleAreaValue = rectangleWidth * rectabgleLength;
+  const rectangleArea = rectangleAreaValue.toFixed(2);
 
   // validation & create output area
   const areaValue = validationOutput(rectangleWidth, rectabgleLength,rectangle, rectangleArea);  
@@ -39,8 +43,8 @@ document.getElementById('parallelogram-calc-btn').addEventListener('click', func
   const parallelogramHeight = getStringTagValue('parallelogram-height');
   const parallelogram = getAreaName('parallelogram');
   // Parallelogram calculation
-  const parallelogramArea = parallelogramBase * parallelogramHeight;
-
+  const parallelogramAreaValue = parallelogramBase * parallelogramHeight;
+  const parallelogramArea = parallelogramAreaValue.toFixed(2);
   // validation & create output area
   const areaValue = validationOutput(parallelogramBase, parallelogramHeight,parallelogram, parallelogramArea); 
 });
@@ -51,7 +55,8 @@ document.getElementById('rhombus-calc-btn').addEventListener('click', function()
   const diagonal2 = getStringTagValue('diagonal-2');
   const rhombus = getAreaName('rhombus');
   // Rhombus calculation
-  const rhombusArea = diagonal1 * diagonal2;
+  const rhombusAreaValue = diagonal1 * diagonal2;
+  const rhombusArea = rhombusAreaValue.toFixed(2);
 
   // validation & create output area
   const areaValue = validationOutput(diagonal1, diagonal2,rhombus, rhombusArea);
@@ -64,7 +69,8 @@ document.getElementById('pentagon-calc-btn').addEventListener('click', function(
   const pentagonBase = getStringTagValue('pentagon-base');
   const pentagon = getAreaName('pentagon');
   // Pentagon calculation
-  const pentagonArea = 0.5 * pentagonPerimeter * pentagonBase;
+  const pentagonAreaValue = 0.5 * pentagonPerimeter * pentagonBase;
+  const pentagonArea = pentagonAreaValue.toFixed(2);
 
   // validation & create output area
   const areaValue = validationOutput(pentagonPerimeter, pentagonBase,pentagon, pentagonArea); 
@@ -79,12 +85,16 @@ document.getElementById('ellipse-calc-btn').addEventListener('click', function()
 
   // Ellipse calculation
   const ellipseAreaValue = 3.14 * ellipseAxisA * ellipseAxisB;
-  const ellipseAreaFloat = parseFloat(ellipseAreaValue);
-  const ellipseArea = ellipseAreaFloat.toFixed(2);
+  const ellipseArea = ellipseAreaValue.toFixed(2);
 
   // validation & create output area
   const areaValue = validationOutput(ellipseAxisA, ellipseAxisB,ellipse, ellipseArea); 
 });
 
+
+// triangle edit button
+document.getElementById('edit-btn').addEventListener('click', function(){
+  
+});
 
 

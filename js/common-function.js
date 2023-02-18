@@ -1,13 +1,13 @@
 // function for getting number value from input field by using id
 function getInputTagValue(id){
   const getValueString = document.getElementById(id).value;
-  const getValue = parseInt(getValueString);
+  const getValue = parseFloat(getValueString);
   return getValue;
 }
 // function for getting number value from h2 field by using id
 function getStringTagValue(id){
   const getValueString = document.getElementById(id).innerText;
-  const getValue = parseInt(getValueString);
+  const getValue = parseFloat(getValueString);
   return getValue;
 }
 // get arae name
@@ -19,17 +19,17 @@ function getAreaName(id){
 // calculation output function
 function createOutput(id,geometry,triangleArea){
 const calculationOutput = document.getElementById(id);
-  const ul = document.createElement('ul');
-  ul.innerHTML = `
-    <tr class="my-2">
+  const table = document.createElement('table');
+  table.innerHTML = `
+    <tr class="text-center">
       <td>${serialNo}.</td>
       <td>${geometry}</td>
-      <td">${triangleArea}cm<sup>2</sup></td>
-      <td"><button class="bg-blue-500 rounded px-1 py-1 my-2">Convert to m<sup>2</sup></button></td>
+      <td>${triangleArea}cm<sup>2</sup></td>
+      <td><button class="bg-blue-500 rounded my-2 p-1">Convert to m<sup>2</sup></button></td>
     
     </tr>
   `
-  calculationOutput.appendChild(ul);
+  calculationOutput.appendChild(table);
 }
 
 // common function for validation & create output table by js
@@ -50,8 +50,7 @@ const outputArea = createOutput('calculation-output', areaName, area);
 function randomColorGenerate(id) {
   const randomColor = Math.floor(Math.random()*16777215).toString(16);
   const cardColor = document.getElementById(id);
-  cardColor.style.backgroundColor = "#" + randomColor;
-  color.innerHTML = "#" + randomColor;
+  cardColor.style.backgroundColor = "#" + randomColor; 
 }
 
 // background color generator
