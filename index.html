@@ -18,7 +18,7 @@
       </div>
   
       <div class="navbar-end">
-        <a class="btn bg-blue-400">Blog</a>
+        <a id="blog-btn" class="btn bg-blue-400">Blog</a>
       </div>
     </div>
   </nav>
@@ -30,7 +30,7 @@
           <img src="images/triangle.png" alt="Shoes" class="rounded pt-3" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Triangle</h2>
+          <h2 id="triangle" class="card-title">Triangle</h2>
           <p>Area (A) = 0.5 x b x h</p>
           <div>
             <input id="triagle-base" class="w-1/6 rounded text-center font-medium" type="text" placeholder="b">
@@ -48,16 +48,16 @@
           <img src="images/rectangle.png" alt="Shoes" class="rounded pt-3" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Rectangle</h2>
+          <h2 id="rectangle" class="card-title">Rectangle</h2>
           <p>Area (A) = w x l</p>
           <div>
-            <input class="w-1/6 bg-gray-300 rounded text-center font-medium" type="text" placeholder="w">
+            <input id="rectangle-width" class="w-1/6 bg-gray-300 rounded text-center font-medium" type="text" placeholder="w">
             <label class="mr-4">cm</label>
-            <input class="w-1/6 bg-gray-300 rounded text-center font-medium" type="text" placeholder="l">
+            <input id="rectangle-length" class="w-1/6 bg-gray-300 rounded text-center font-medium" type="text" placeholder="l">
             <label>cm</label>
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary py-2 capitalize">Calculate</button>
+            <button id="rectagle-calc-btn" class="btn btn-primary py-2 capitalize">Calculate</button>
           </div>
         </div>
       </div>
@@ -66,14 +66,14 @@
           <img src="images/parallelogram.png" alt="Shoes" class="rounded pt-3" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Parallelogram</h2>
+          <h2 id="parallelogram" class="card-title">Parallelogram</h2>
           <p>Area (A) = b x h</p>
           <div class="flex items-center">
-            <h2>b = <span>10</span>cm</h2>
-            <h2>h = <span>12</span>cm</h2>
+            <h2>b = <span id="parallelogram-base">10</span>cm</h2>
+            <h2>h = <span id="parallelogram-height">12</span>cm</h2>
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary py-2 capitalize">Calculate</button>
+            <button id="parallelogram-calc-btn" class="btn btn-primary py-2 capitalize">Calculate</button>
           </div>
         </div>
       </div>
@@ -82,16 +82,16 @@
           <img src="images/rhombus.png" alt="Shoes" class="rounded pt-3" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Rhombus</h2>
+          <h2 id="rhombus" class="card-title">Rhombus</h2>
           <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
           <div>
             <div class="flex items-center">
-              <h2>d<sub>1</sub> = <span>16</span>cm</h2>
-              <h2>d<sub>2</sub> = <span>8</span>cm</h2>
+              <h2>d<sub>1</sub> = <span id="diagonal-1">16</span>cm</h2>
+              <h2>d<sub>2</sub> = <span id="diagonal-2">8</span>cm</h2>
             </div>
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary py-2 capitalize">Calculate</button>
+            <button id="rhombus-calc-btn" class="btn btn-primary py-2 capitalize">Calculate</button>
           </div>
         </div>
       </div>
@@ -100,14 +100,14 @@
           <img src="images/pentagon.png" alt="Shoes" class="rounded pt-3" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Pentagon</h2>
-          <p>Area (A) = 0.5 x p x p</p>
+          <h2 id="pentagon" class="card-title">Pentagon</h2>
+          <p>Area (A) = 0.5 x p x b</p>
            <div class="flex items-center">
-              <h2>p = <span>6</span>cm,</h2>
-              <h2>b = <span>10</span>cm</h2>
+              <h2>p = <span id="pentagon-perimeter">6</span>cm,</h2>
+              <h2>b = <span id="pentagon-base">10</span>cm</h2>
             </div>
           <div class="card-actions">
-            <button class="btn btn-primary py-2 capitalize">Calculate</button>
+            <button id="pentagon-calc-btn" class="btn btn-primary py-2 capitalize">Calculate</button>
           </div>
         </div>
       </div>
@@ -116,14 +116,14 @@
           <img src="images/ellipse.png" alt="Shoes" class="rounded pt-3" />
         </figure>
         <div class="card-body items-center text-center">
-          <h2 class="card-title">Ellipse</h2>
+          <h2 id="ellipse" class="card-title">Ellipse</h2>
           <p>Area (A) = <span>&#8508;</span>ab</p>
           <div class="flex items-center">
-            <h2>a = <span>10</span>cm,</h2>
-            <h2>b = <span>4</span>cm</h2>
+            <h2>a = <span id="ellipse-axis-a">10</span>cm,</h2>
+            <h2>b = <span id="ellipse-axis-b">4</span>cm</h2>
           </div>
           <div class="card-actions">
-            <button class="btn btn-primary py-2 capitalize">Calculate</button>
+            <button id="ellipse-calc-btn" class="btn btn-primary py-2 capitalize">Calculate</button>
           </div>
         </div>
       </div>
