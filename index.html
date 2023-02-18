@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--Nav section-->
-  <nav class="px-10 py-4 w-4/5 lg:w-full mx-auto">
+  <nav class="px-1 py-4 w-3/5 lg:w-full mx-auto">
     <div class="navbar bg-base-100 justify-center items-center bg-blue-100">
       <div class="navbar-start grid grid-rows-2">
         <h1 class="text-2xl font-bold">Interactive</h1>
@@ -24,22 +24,22 @@
     </div>
   </nav>
   <!--Card section-->
-  <main class="w-full px-2 lg:px-10 lg:flex mt-5">
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-1 w-full">
+  <main class="w-full px-1 lg:flex mt-5">
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-1 w-3/4 mx-auto">
       <!--triagle area-->
-      <div id="triangle-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-red-300 shadow-xl mx-auto">
+      <div id="triangle-card" class="card w-4/5 lg:w-full lg:h-3/4 mx-auto">
         <figure class="px-2 pt-16">
           <img src="images/triangle.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full"/>
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body items-center">
           <h2 id="triangle" class="card-title">Triangle</h2>
           
-          <p>Area(A) = 0.5 x b x h <span id="edit-btn"><i class="fa-regular fa-pen-to-square"></i></span></p>
+          <p class="text-sm">Area(A)=0.5 x b x h <span id="edit-btn"><i class="fa-regular fa-pen-to-square"></i></span></p>
         
           <div class="flex gap-1 justify-between">
-            <input id="triagle-base" class="w-16 rounded text-center text-base" type="text" placeholder="b">
+            <input id="triagle-base" class="w-14 rounded text-center text-base" type="text" placeholder="b">
             <label>cm</label>
-            <input id="triagle-height" class="w-16 rounded text-center text-base" type="text" placeholder="h">
+            <input id="triagle-height" class="w-14 rounded text-center text-base" type="text" placeholder="h">
             <label>cm</label>
             <input type="checkbox" id="check" name="check" value="Check" class="w-6 h-6">
           </div>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <!--rectangle area-->
-      <div id="rectangle-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+      <div id="rectangle-card" class="card w-4/5 lg:w-full lg:h-3/4 mx-auto">
         <figure class="px-2 pt-16">
           <img src="images/rectangle.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
@@ -68,7 +68,7 @@
         </div>
       </div>
       <!--parallelogram area-->
-      <div id="parallelogram-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+      <div id="parallelogram-card" class="card w-4/5 lg:w-full lg:h-3/4 mx-auto">
         <figure class="px-2 pt-16">
           <img src="images/parallelogram.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
@@ -85,13 +85,13 @@
         </div>
       </div>
       <!--rhombus area-->
-      <div id="rhombus-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-blue-300 shadow-xl mx-auto">
+      <div id="rhombus-card" class="card w-4/5 lg:w-full lg:h-3/4 mx-auto">
         <figure class="px-2 pt-16">
           <img src="images/rhombus.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
         <div class="card-body items-center text-center gap-1">
           <h2 id="rhombus" class="card-title">Rhombus</h2>
-          <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+          <p class="text-sm">Area(A)= 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
           <div>
             <div class="flex items-center gap-1">
               <h2>d<sub>1</sub> = <span id="diagonal-1">16</span>cm</h2>
@@ -104,7 +104,7 @@
         </div>
       </div>
       <!--pentagon area-->
-      <div id="pentagon-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+      <div id="pentagon-card" class="card w-4/5 lg:w-full lg:h-3/4 mx-auto">
         <figure class="px-2 pt-16">
           <img src="images/pentagon.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
@@ -121,7 +121,7 @@
         </div>
       </div>
       <!--ellipse area-->
-      <div id="ellipse-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+      <div id="ellipse-card" class="card w-4/5 lg:w-full lg:h-3/4 mx-auto">
         <figure class="px-2 pt-3">
           <img src="images/ellipse.png" alt="Shoes" class="rounded pt-3 w-2/3 lg:w-full" />
         </figure>
@@ -139,7 +139,7 @@
       </div>
     </section>
     <!--Output area calculation-->
-    <section id="calculation-output" class="w-full lg:w-2/6 px-2 py-2">
+    <section id="calculation-output" class="w-full lg:w-2/5 px-2 py-2">
       <h1 class="text-center font-bold text-xl underline">Area Calculation</h1>
     </section>
     

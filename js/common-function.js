@@ -21,11 +21,11 @@ function createOutput(id,geometry,triangleArea){
 const calculationOutput = document.getElementById(id);
   const table = document.createElement('table');
   table.innerHTML = `
-    <tr class="text-center">
-      <td>${serialNo}.</td>
-      <td>${geometry}</td>
-      <td>${triangleArea}cm<sup>2</sup></td>
-      <td><button class="bg-blue-500 rounded my-2 p-1">Convert to m<sup>2</sup></button></td>
+    <tr>
+      <td class="w-0">${serialNo}.</td>
+      <td class="w-0">${geometry}</td>
+      <td class="w-1/12">${triangleArea}cm<sup>2</sup></td>
+      <td class="w-1/3"><button class="bg-blue-500 rounded p-1 my-2">Convert to m<sup>2</sup></button></td>
     
     </tr>
   `
