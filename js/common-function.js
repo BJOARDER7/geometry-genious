@@ -45,3 +45,18 @@ serialNo += 1;
 const outputArea = createOutput('calculation-output', areaName, area);
 }
 }
+
+// random color generator function
+function randomColorGenerate(id) {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  const cardColor = document.getElementById(id);
+  cardColor.style.backgroundColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
+// background color generator
+function colorMouseEvent(id){
+document.getElementById(id).addEventListener('mouseenter', function(){
+  const ellipseRandomColor = randomColorGenerate(id);
+});
+}

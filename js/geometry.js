@@ -82,3 +82,4 @@ document.getElementById('ellipse-calc-btn').addEventListener('click', function()
   // validation & create output area
   const areaValue = validationOutput(ellipseAxisA, ellipseAxisB,ellipse, ellipseArea); 
 });
+
