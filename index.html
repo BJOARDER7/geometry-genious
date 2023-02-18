@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--Nav section-->
-  <nav class="px-10 py-4">
+  <nav class="px-10 py-4 w-4/5 lg:w-full mx-auto">
     <div class="navbar bg-base-100 justify-center items-center bg-blue-100">
       <div class="navbar-start grid grid-rows-2">
         <h1 class="text-2xl font-bold">Interactive</h1>
@@ -25,113 +25,115 @@
   </nav>
   <!--Card section-->
   <main class="w-full px-2 lg:px-10 lg:flex mt-5">
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-2 w-full lg:w-2/3">
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-1 w-full">
       <!--triagle area-->
-      <div id="triangle-card" class="card w-full bg-red-300 shadow-xl p-1">
-        <figure>
-          <img src="images/triangle.png" alt="Shoes" class="rounded pt-3 w-3/4"/>
+      <div id="triangle-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-red-300 shadow-xl mx-auto">
+        <figure class="px-2 pt-16">
+          <img src="images/triangle.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full"/>
         </figure>
         <div class="card-body items-center text-center">
           <h2 id="triangle" class="card-title">Triangle</h2>
-          <p>Area (A) = 0.5 x b x h <span id="edit-btn"><i class="fa-regular fa-pen-to-square"></i></span></p>
-          <div>
-            <input id="triagle-base" class="w-1/6 rounded text-center font-medium" type="text" placeholder="b">
-            <label class="mr-4">cm</label>
-            <input id="triagle-height" class="w-1/6 rounded text-center font-medium" type="text" placeholder="h">
+          
+          <p>Area(A) = 0.5 x b x h <span id="edit-btn"><i class="fa-regular fa-pen-to-square"></i></span></p>
+        
+          <div class="flex gap-1 justify-between">
+            <input id="triagle-base" class="w-16 rounded text-center text-base" type="text" placeholder="b">
+            <label>cm</label>
+            <input id="triagle-height" class="w-16 rounded text-center text-base" type="text" placeholder="h">
             <label>cm</label>
             <input type="checkbox" id="check" name="check" value="Check" class="w-6 h-6">
           </div>
           <div class="card-actions">
-            <button id="triangle-calc-btn" class="btn btn-primary py-2 px-10 capitalize">Calculate</button>
+            <button id="triangle-calc-btn" class="btn btn-primary py-2 lg:py-0 px-12 capitalize">Calculate</button>
           </div>
         </div>
       </div>
       <!--rectangle area-->
-      <div id="rectangle-card" class="card w-full bg-base-100 shadow-xl p-1">
-        <figure>
-          <img src="images/rectangle.png" alt="Shoes" class="rounded pt-3 w-3/4" />
+      <div id="rectangle-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+        <figure class="px-2 pt-16">
+          <img src="images/rectangle.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 id="rectangle" class="card-title">Rectangle</h2>
           <p>Area (A) = w x l</p>
-          <div>
-            <input id="rectangle-width" class="w-1/6 bg-gray-300 rounded text-center font-medium" type="text" placeholder="w">
-            <label class="mr-4">cm</label>
-            <input id="rectangle-length" class="w-1/6 bg-gray-300 rounded text-center font-medium" type="text" placeholder="l">
+          <div class="flex gap-1 justify-between">
+            <input id="rectangle-width" class="w-16 bg-gray-300 rounded text-center font-medium" type="text" placeholder="w">
+            <label>cm</label>
+            <input id="rectangle-length" class="w-16 bg-gray-300 rounded text-center font-medium" type="text" placeholder="l">
             <label>cm</label>
           </div>
           <div class="card-actions">
-            <button id="rectagle-calc-btn" class="btn btn-primary py-2 px-10 capitalize">Calculate</button>
+            <button id="rectagle-calc-btn" class="btn btn-primary py-2 px-12 capitalize">Calculate</button>
           </div>
         </div>
       </div>
       <!--parallelogram area-->
-      <div id="parallelogram-card" class="card w-full bg-base-100 shadow-xl p-1">
-        <figure>
-          <img src="images/parallelogram.png" alt="Shoes" class="rounded pt-3 w-3/4" />
+      <div id="parallelogram-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+        <figure class="px-2 pt-16">
+          <img src="images/parallelogram.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body items-center text-center gap-1">
           <h2 id="parallelogram" class="card-title">Parallelogram</h2>
           <p>Area (A) = b x h</p>
-          <div class="flex items-center">
+          <div class="flex items-center gap-1">
             <h2>b = <span id="parallelogram-base">10</span>cm</h2>
             <h2>h = <span id="parallelogram-height">12</span>cm</h2>
           </div>
           <div class="card-actions">
-            <button id="parallelogram-calc-btn" class="btn btn-primary py-2 px-10 capitalize">Calculate</button>
+            <button id="parallelogram-calc-btn" class="btn btn-primary py-2 px-12 capitalize">Calculate</button>
           </div>
         </div>
       </div>
       <!--rhombus area-->
-      <div id="rhombus-card" class="card w-full bg-blue-300 shadow-xl p-1">
-        <figure>
-          <img src="images/rhombus.png" alt="Shoes" class="rounded pt-3 w-3/4" />
+      <div id="rhombus-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-blue-300 shadow-xl mx-auto">
+        <figure class="px-2 pt-16">
+          <img src="images/rhombus.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body items-center text-center gap-1">
           <h2 id="rhombus" class="card-title">Rhombus</h2>
           <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
           <div>
-            <div class="flex items-center">
+            <div class="flex items-center gap-1">
               <h2>d<sub>1</sub> = <span id="diagonal-1">16</span>cm</h2>
               <h2>d<sub>2</sub> = <span id="diagonal-2">8</span>cm</h2>
             </div>
           </div>
           <div class="card-actions">
-            <button id="rhombus-calc-btn" class="btn btn-primary py-2 px-10 capitalize">Calculate</button>
+            <button id="rhombus-calc-btn" class="btn btn-primary py-2 px-12 capitalize">Calculate</button>
           </div>
         </div>
       </div>
       <!--pentagon area-->
-      <div id="pentagon-card" class="card w-full bg-base-100 shadow-xl py-2">
-        <figure>
-          <img src="images/pentagon.png" alt="Shoes" class="rounded pt-3 w-3/4" />
+      <div id="pentagon-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+        <figure class="px-2 pt-16">
+          <img src="images/pentagon.png" alt="Shoes" class="rounded pt-6 w-2/3 lg:w-full" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body items-center text-center gap-1">
           <h2 id="pentagon" class="card-title">Pentagon</h2>
           <p>Area (A) = 0.5 x p x b</p>
-           <div class="flex items-center">
+           <div class="flex items-center gap-1">
               <h2>p = <span id="pentagon-perimeter">6</span>cm,</h2>
               <h2>b = <span id="pentagon-base">10</span>cm</h2>
             </div>
           <div class="card-actions">
-            <button id="pentagon-calc-btn" class="btn btn-primary py-2 px-10 capitalize">Calculate</button>
+            <button id="pentagon-calc-btn" class="btn btn-primary py-2 px-12 capitalize">Calculate</button>
           </div>
         </div>
       </div>
       <!--ellipse area-->
-      <div id="ellipse-card" class="card w-full bg-base-100 shadow-xl p-1">
-        <figure>
-          <img src="images/ellipse.png" alt="Shoes" class="rounded pt-3 w-3/4" />
+      <div id="ellipse-card" class="card w-2/3 lg:w-full lg:h-3/4 bg-base-100 shadow-xl mx-auto">
+        <figure class="px-2 pt-3">
+          <img src="images/ellipse.png" alt="Shoes" class="rounded pt-3 w-2/3 lg:w-full" />
         </figure>
-        <div class="card-body items-center text-center">
+        <div class="card-body items-center text-center gap-1">
           <h2 id="ellipse" class="card-title">Ellipse</h2>
           <p>Area (A) = <span>&pi;</span>ab</p>
-          <div class="flex items-center">
+          <div class="flex items-center gap-1">
             <h2>a = <span id="ellipse-axis-a">10</span>cm,</h2>
             <h2>b = <span id="ellipse-axis-b">4</span>cm</h2>
           </div>
           <div class="card-actions">
-            <button id="ellipse-calc-btn" class="btn btn-primary py-2 px-10 capitalize">Calculate</button>
+            <button id="ellipse-calc-btn" class="btn btn-primary py-2 px-12 capitalize">Calculate</button>
           </div>
         </div>
       </div>
