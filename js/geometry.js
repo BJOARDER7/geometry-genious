@@ -11,10 +11,9 @@ document.getElementById('triangle-calc-btn').addEventListener('click', function(
   
   // triangle calculation
   const triangleArea = 0.5 * triangleBase * triangleHeight;
-
-  // create output table by js
-   serialNo += 1;
-  const triagleOutput = createOutput('calculation-output', triangle, triangleArea); 
+  // validation & create output area
+  const areaValue = validationOutput(triangleBase, triangleHeight,triangle, triangleArea);
+   
 });
 
 // rectangle area
@@ -26,9 +25,8 @@ document.getElementById('rectagle-calc-btn').addEventListener('click', function(
   // rectangle calculation
   const rectangleArea = rectangleWidth * rectabgleLength;
 
-  // create output table by js
-   serialNo += 1;
-  const rectangleOutput = createOutput('calculation-output', rectangle, rectangleArea);  
+  // validation & create output area
+  const areaValue = validationOutput(rectangleWidth, rectabgleLength,rectangle, rectangleArea);  
 });
 
 // Parallelogram area
@@ -40,9 +38,8 @@ document.getElementById('parallelogram-calc-btn').addEventListener('click', func
   // Parallelogram calculation
   const parallelogramArea = parallelogramBase * parallelogramHeight;
 
-  // create output table by js
-   serialNo += 1;
-  const parallelogramOutput = createOutput('calculation-output', parallelogram, parallelogramArea);  
+  // validation & create output area
+  const areaValue = validationOutput(parallelogramBase, parallelogramHeight,parallelogram, parallelogramArea); 
 });
 // Rhombus area
 document.getElementById('rhombus-calc-btn').addEventListener('click', function(){
@@ -53,9 +50,8 @@ document.getElementById('rhombus-calc-btn').addEventListener('click', function()
   // Rhombus calculation
   const rhombusArea = diagonal1 * diagonal2;
 
-  // create output table by js
-   serialNo += 1;
-  const parallelogramOutput = createOutput('calculation-output', rhombus, rhombusArea);  
+  // validation & create output area
+  const areaValue = validationOutput(diagonal1, diagonal2,rhombus, rhombusArea);
 });
 
 // Pentagon area
@@ -67,9 +63,8 @@ document.getElementById('pentagon-calc-btn').addEventListener('click', function(
   // Pentagon calculation
   const pentagonArea = 0.5 * pentagonPerimeter * pentagonBase;
 
-  // create output table by js
-   serialNo += 1;
-  const pentagonOutput = createOutput('calculation-output', pentagon, pentagonArea);  
+  // validation & create output area
+  const areaValue = validationOutput(pentagonPerimeter, pentagonBase,pentagon, pentagonArea); 
 });
 
 // Ellipse area
@@ -78,11 +73,12 @@ document.getElementById('ellipse-calc-btn').addEventListener('click', function()
   const ellipseAxisA = getStringTagValue('ellipse-axis-a');
   const ellipseAxisB = getStringTagValue('ellipse-axis-b');
   const ellipse = getAreaName('ellipse');
+
   // Ellipse calculation
   const ellipseAreaValue = 3.14 * ellipseAxisA * ellipseAxisB;
   const ellipseAreaFloat = parseFloat(ellipseAreaValue);
   const ellipseArea = ellipseAreaFloat.toFixed(2);
-  // create output table by js
-   serialNo += 1;
-  const ellipseOutput = createOutput('calculation-output', ellipse, ellipseArea);  
+
+  // validation & create output area
+  const areaValue = validationOutput(ellipseAxisA, ellipseAxisB,ellipse, ellipseArea); 
 });
