@@ -1,4 +1,7 @@
-
+// blog button
+document.getElementById('blog-btn').addEventListener('click', function(){
+  window.location.href = "question/index.html";
+});
 
 let serialNo = 0;
 
@@ -82,4 +85,6 @@ document.getElementById('ellipse-calc-btn').addEventListener('click', function()
   // validation & create output area
   const areaValue = validationOutput(ellipseAxisA, ellipseAxisB,ellipse, ellipseArea); 
 });
+
+
 
